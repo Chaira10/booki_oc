@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@400;700&family=Permanent+Marker&family=Raleway:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://kit.fontawesome.com/13f98801db.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -21,139 +26,162 @@
     </header>
     <main>
         <section class="recherche">
-            <h1></h1>
-            <p></p>
-            <div class="">
-                <i></i>
-                <input />
-                <button></button>
+            <h1 class="recherche-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="recherche-text">En plein centre ville ou en plein nature</p>
+            <div class="search-bar">
+                <span class="search">
+                    <span class="icon-search-bar"><i class="fa-solid fa-location-dot"></i></span>
+                    
+                    <input class="input-text"/>
+                    <button class="btn-search-bar">Rechercher</button>
+                </span>
+
             </div>
             <div class="filter">
-                <h3></h3>
-                <button><i></i>Economique</button>
-                <button><i></i>Familial</button>
-                <button><i></i>Romantique</button>
-                <button><i></i>Nos pépite</button>
+                <h3 class="title-filter">Filtres</h3>
+                <span class="btn-filter"><i class="fa-solid fa-money-bill-1-wave"></i><span class="btn-title">Economique</span></span>
+                <span class="btn-filter"><i class="fa-solid fa-person-dress"></i><span class="btn-title">Familial</span></span>
+                <span class="btn-filter"><i class="fa-solid fa-heart"></i><span class="btn-title">Romantique</span></span>
+                <span class="btn-filter"><i class="fa-solid fa-fire"></i><span class="btn-title">Nos pépites</span></span>
             </div>
+            <span class="info">
+                <p><i class="fa-solid fa-circle-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+            </span>
         </section>
         <section>
             <div class="hebergement">
-                <h3>Hébergements à Marseille</h3>
+                <h3 class="">Hébergements à Marseille</h3>
                 <div class="flex-colums">
-                    <div class="flex-row1">
+                    <div class="card-row">
+
                         <div class="card">
                             <div class="card-body">
                                 <div class="img-card">
-                                    <img/>
+                                    <img src="./assets/images/hotel/1.png" alt="hotel" class="img-card"/>
                                 </div>
-                                <h4>Hôtel du port</h4>
-                                <p>Nuit à partir de 52€</p>
-                                <span>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
+                                <h4 class="card-title">Hôtel du port</h4>
+                                <p class="card-text">Nuit à partir de 52€</p>
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i><i></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
                                     <i></i>
                                 </span>
                             </div>
                             <div class="card-body">
                                 <div class="img-card">
-                                    <img/>
+                                    <img src="./assets/images/hotel/3.png" alt="hotel" class="img-card"/>
                                 </div>
                                 <h4>Hôtel chez Amina</h4>
                                 <p>Nuit à partir de 52€</p>
-                                <span>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i><i></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
                                     <i></i>
                                 </span>
                             </div>
                             <div class="card-body">
                                 <div class="img-card">
-                                    <img/>
+                                    <img src="./assets/images/hotel/4.png" alt="hotel" class="img-card"/>
                                 </div>
                                 <h4>Hôtel les mouettes</h4>
                                 <p>Nuit à partir de 52€</p>
-                                <span>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i><i></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
                                     <i></i>
                                 </span>
                             </div>
+                            
                         </div>
                     </div>
-                    <div class="flex-row2">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="img-card">
-                                    <img/>
-                                </div>
-                                <h4>Hôtel du port</h4>
-                                <p>Nuit à partir de 52€</p>
-                                <span>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                </span>
-                            </div>
-                            <div class="card-body">
-                                <div class="img-card">
-                                    <img/>
-                                </div>
-                                <h4>Hôtel chez Amina</h4>
-                                <p>Nuit à partir de 52€</p>
-                                <span>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                </span>
-                            </div>
-                            <div class="card-body">
-                                <div class="img-card">
-                                    <img/>
-                                </div>
-                                <h4>Hôtel les mouettes</h4>
-                                <p>Nuit à partir de 52€</p>
-                                <span>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="populaire">
-                <div class="flex-colums">
-                    <div class="card">
+                    <div class="card-row2">
                         <div class="card-body">
                             <div class="img-card">
-                                <img/>
+                                <img src="./assets/images/hotel/2.png" alt="hotel" class="img-card"/>
                             </div>
+                            <h4 class="card-title">Hôtel du port</h4>
+                            <p class="card-text">Nuit à partir de 52€</p>
+                            <span class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="img-card">
+                                <img src="./assets/images/hotel/5.png" alt="hotel" class="img-card"/>
+                            </div>
+                            <h4 class="card-title">Hôtel du port</h4>
+                            <p class="card-text">Nuit à partir de 52€</p>
+                            <span class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="img-card">
+                                <img src="./assets/images/hotel/6.png" alt="hotel" class="img-card"/>
+                            </div>
+                            <h4 class="card-title">Hôtel du port</h4>
+                            <p class="card-text">Nuit à partir de 52€</p>
+                            <span class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i></i>
+                            </span>
+                        </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <h3>Afficher plus</h3>
+                </div>
+                
+            </div>
+
+
+            <div class="populaire">
+                    <div class="card2">
+
+                        <div class="card-body2">
+                            <div class="img-card2">
+                                <img src="./assets/images/hotel/7.png" alt="hotel" class="img-card2"/>
+                            </div>
+                            <div class="card-text2">
                             <h4>Hôtel du port</h4>
                             <p>Nuit à partir de 52€</p>
                             <span>
-                                <i></i>
+                                <i>s</i>
                                 <i></i>
                                 <i></i>
                                 <i></i>
                                 <i></i>
                             </span>
                         </div>
-                        <div class="card-body">
-                            <div class="img-card">
-                                <img/>
+                        </div>
+
+                        <div class="card-body2">
+                            <div class="img-card2">
+                                <img src="./assets/images/hotel/8.png" alt="hotel" class="img-card2"/>
                             </div>
                             <h4>Hôtel chez Amina</h4>
                             <p>Nuit à partir de 52€</p>
@@ -165,9 +193,10 @@
                                 <i></i>
                             </span>
                         </div>
-                        <div class="card-body">
-                            <div class="img-card">
-                                <img/>
+
+                        <div class="card-body2">
+                            <div class="img-card2">
+                                <img src="./assets/images/hotel/9.png" alt="hotel" class="img-card2"/>
                             </div>
                             <h4>Hôtel les mouettes</h4>
                             <p>Nuit à partir de 52€</p>
@@ -179,10 +208,12 @@
                                 <i></i>
                             </span>
                         </div>
-                    </div>
+
+                    
                 </div>
             </div>
         </section>
+
         <section class="activite">
             <h3></h3>
             <div class="flex-row1">
