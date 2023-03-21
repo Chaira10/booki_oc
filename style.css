@@ -63,11 +63,11 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .primary {
-  color:#0767FC;
+  color:#0065FC;
 }
 
 .bg-primary {
-  background-color:#0767FC;
+  background-color: #0065FC;
 }
 
 .secondary {
@@ -76,6 +76,14 @@ footer, header, hgroup, menu, nav, section {
 
 .bg-secondary {
   background-color: #F2F2F2;
+}
+
+.secondary2 {
+  color: #D9D9D9;
+}
+
+.bg-secondary2 {
+  background-color: #D9D9D9;
 }
 
 .img-fluid {
@@ -131,8 +139,8 @@ header {
 }
 
 .nav-link li a:hover {
-    border-top: 1px solid #0767FC;
-    color:#0767FC;
+    border-top: 1px solid #0065FC;
+    color:#0065FC;
 }
 
 nav {
@@ -191,7 +199,7 @@ nav {
     height: 49px;
     border-radius: 0px 15px 15px 0px;
     color: white;
-    border-color: #0767FC;
+    border-color: #0065FC;
     padding: 14px;
 
 }
@@ -220,16 +228,43 @@ nav {
 }
 
 .btn-filter:hover {
-    background-color: #a1bde8;
+    background-color: #DEEBFF;
 }
 
 .btn-title {
     margin-left: 10px;
+    font-weight: bold;
+}
+
+.info p {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  margin-right: 10px;
+  margin-left: 10px;
+  /* padding: 7px; */
+  /* border-radius: 50%; */
+  width: 100%;
+  /* height: 10px; */
+  /* border: 1px solid #D9D9D9; */
+  /* text-align: center; */
+  align-items: center;
 }
 
 
 .info i {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
     margin-right: 10px;
+    /* margin-left: 10px; */
+    padding: 7px;
+    border-radius: 50%;
+    /* width: 10px; */
+    /* height: 10px; */
+    border: 1px solid #D9D9D9;
+    /* text-align: center; */
+    /* align-items: center; */
 }
 
 /* ====================================================== */
@@ -275,6 +310,18 @@ nav {
     border-radius: 20px;
 }
 
+.card-body h4 {
+  font-weight: bold;
+  /* align-items: flex-start; */
+  width: 90%;
+  text-align: start;
+}
+
+.card-body p {
+  width: 90%;
+  text-align: start;
+}
+
 .card-row {
     gap: 30px;
 }
@@ -285,6 +332,14 @@ nav {
     height: 120px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
+}
+
+.euro {
+  font-weight: bolder;
+}
+
+.stars i {
+  font-size: 12px;
 }
 
 
@@ -426,9 +481,16 @@ header {
   justify-content: center;
 }
 
+ /* Mettre le logo en pleine largeur */
 .nav-logo img {
-width: 100%;
+width: 62px;
+height: 20px;
 justify-content: center;
+}
+
+.nav-logo {
+margin-top: 30px;
+margin-bottom: 30px;
 }
 
 nav {
@@ -442,6 +504,7 @@ width: 50%;
 nav ul li a {
 font-size: 1.3em;
 }
+
 
 /* Mettre les liens sur une ligne différente */
 .nav-link {
@@ -511,6 +574,7 @@ text-align: center;
     height: auto;
     margin-bottom: 50px;
     background-color: #FFFFFF;
+    margin-top: 0;
   }
 
   .populaire {
@@ -523,6 +587,7 @@ text-align: center;
     order: 1;
     border-radius: 0;
     position:relative;
+    margin-bottom: 0px;
   }
 
   .card2 {
@@ -577,20 +642,20 @@ text-align: center;
     display: flex;
     flex-direction: column;
     height: 95%;
-    align-items: flex-end;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .stars2 {
     font-size: 0.9em ;
     margin-top: auto;
+    padding-left: 10px;
   }
 
   .stars {
     font-size: 0.9em ;
     margin-top: auto;
   }
-
-
 
   .card3 {
     align-items: center;
@@ -640,7 +705,7 @@ text-align: center;
   }
 
   .recherche-title {
-    font-size: 2.3em;
+    font-size: 22px;
     font-weight: bold;
     
   }
@@ -657,6 +722,7 @@ text-align: center;
   }
 
   .hebergement-title {
+    margin-top: 15px;
     font-size: 1.3em;
     font-weight: bold;
     padding-left: 10px;
@@ -665,7 +731,7 @@ text-align: center;
   .filter {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     
   }
 
@@ -696,7 +762,7 @@ text-align: center;
   }
   
   .boutons-group button {
-    width: 50%;
+    width: 20%;
     margin: 5px;
   }
 
@@ -706,15 +772,80 @@ text-align: center;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding-left: 0;
         gap: 30px;
         height: 461px;
         margin: 0;
+        padding: 15px;
+        
     }
     .footer > div {
         flex: 0 0 100%;
         margin-bottom: 20px;
         
+    }
+
+    .footer-propos  {
+      gap: 19px;
+      
+    }
+
+    .footer-propos h4 {
+      font-weight: bold;
+      font-size: 1.3em;
+      
+    }
+
+    .footer-propos p {
+      font-size: 1em;
+    }
+
+    .footer-hebergement {
+      gap: 19px;
+    }
+
+    .footer-hebergement h4 {
+      font-weight: bold;
+      font-size: 1.3em;
+      
+    }
+
+    .footer-hebergement p {
+      font-size: 1em;
+    }
+
+    .footer-assistance {
+      gap: 19px;
+    }
+
+    .footer-assistance h4 {
+      font-weight: bold;
+      font-size: 1.3em;
+      
+    }
+
+    .footer-assistance p {
+      font-size: 1em;
+    }
+
+    .title-filter {
+      text-align: start;
+      margin-left: 20px;
+    }
+
+    .info p {
+      font-size: 1em;
+    }
+
+    .stars {
+      width: 90%;
+      text-align: start;
+      padding-bottom: 10px;
+    }
+  
+    .stars2 {
+      width: 90%;
+      text-align: start;
+      padding-bottom: 10px;
     }
   }
 
@@ -739,8 +870,14 @@ text-align: center;
 
      /* Mettre le logo en pleine largeur */
   .nav-logo img {
-    width: 100%;
+    width: 62px;
+    height: 20px;
     justify-content: center;
+  }
+
+  .nav-logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   nav {
@@ -824,6 +961,7 @@ text-align: center;
         height: auto;
         margin-bottom: 50px;
         background-color: #FFFFFF;
+        margin-top: 0;
       }
 
       .populaire {
@@ -836,6 +974,7 @@ text-align: center;
         order: 1;
         border-radius: 0;
         position:relative;
+        margin-bottom: 0px;
       }
 
       .card2 {
@@ -890,12 +1029,14 @@ text-align: center;
         display: flex;
         flex-direction: column;
         height: 95%;
-        align-items: flex-end;
+        align-items: flex-start;
+        width: 100%;
       }
 
       .stars2 {
         font-size: 0.9em ;
         margin-top: auto;
+        padding-left: 10px;
       }
 
       .stars {
@@ -951,7 +1092,7 @@ text-align: center;
       }
 
       .recherche-title {
-        font-size: 2.3em;
+        font-size: 22px;
         font-weight: bold;
         
       }
@@ -968,6 +1109,7 @@ text-align: center;
       }
 
       .hebergement-title {
+        margin-top: 15px;
         font-size: 1.3em;
         font-weight: bold;
         padding-left: 10px;
@@ -1077,6 +1219,22 @@ text-align: center;
           margin-left: 20px;
         }
 
+        .info p {
+          font-size: 1em;
+        }
+
+        .stars {
+          width: 90%;
+          text-align: start;
+          padding-bottom: 10px;
+        }
+      
+        .stars2 {
+          width: 90%;
+          text-align: start;
+          padding-bottom: 10px;
+        }
+
 /* ====================================================== */
 /* ================== Tablette ========================== */
 /* ====================================================== */
@@ -1086,6 +1244,17 @@ text-align: center;
     body {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .nav-logo img {
+      width: 62px;
+      height: 20px;
+      justify-content: center;
+    }
+  
+    .nav-logo {
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
 
     .recherche-title {
@@ -1225,9 +1394,15 @@ text-align: center;
       .img-card3 {
         width: 100%;
       }
+    
+      .content-card {
+        font-size: 0.9em;
+        padding: 15px;
+        height: 41px;
+      }
 
       .card-body3 {
-        height: 250px;
+        /* height: 250px; */
         margin: 0;
         padding:0;
       }
@@ -1247,11 +1422,11 @@ text-align: center;
         display: inline-block;
       }
       
-      .content-card {
+      /* .content-card {
         font-size: 0.8em;
         padding: 15px;
         height: 150px;
-      }
+      } */
 
       .footer {
         display: flex;
@@ -1271,6 +1446,18 @@ text-align: center;
       .footer-assistance {
         margin-top: 50px;
       }
+
+      .stars {
+        width: 90%;
+        text-align: start;
+        padding-bottom: 10px;
+      }
+    
+      .stars2 {
+        width: 90%;
+        text-align: start;
+        padding-bottom: 10px;
+      }
 }
 
 /* ====================================================== */
@@ -1282,26 +1469,51 @@ text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+
+.nav-logo img {
+  width: 62px;
+  height: 20px;
+  justify-content: center;
+}
+
+.nav-logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section-hebergement {
+  gap: 20px;
+  margin-right: 0;
+}
 .populaire {
     float: left !important;
-    width: 25%;
+    width: 30%;
     border-radius: 15px;
     margin-bottom: 0px;
+    height: 538px;
     
   }
   .hebergement {
     order: 1;
     float: right !important;
-    width: 55%;
+    width: 53%;
     clear: right;
     text-align: right;
     background-color: #F2F2F2;
+    gap: 0px;
+    margin-bottom: 30px;
+  }
+
+  .card-hebergement {
+    margin:0;
+    gap: 0px;
   }
 
   .hebergement-title {
     display: flex;
     align-items:flex-start;
-    margin-top: 15px;
+    margin-top: 0px;
+    margin-bottom: 23px;
   }
 
   .card1 {
@@ -1312,12 +1524,14 @@ text-align: center;
     display: flex;
     flex-direction: row ;
     width: 100% !important;
+    gap: 15px;
   }
 
   .card-row2 {
     display: flex;
     flex-direction: row ;
     width: 100%;
+    gap: 15px;
   }
 
   .card3 {
@@ -1325,18 +1539,21 @@ text-align: center;
     flex-direction: row;
   }
   .card-body {
-    width:100%;
+    width:45%;
+    height: 207px;
   }
 
   .img-card {
     width: 100%;
-    height: 170px;
+    height: 114px;
+    border: 3px solid #FFFFFF;
   }
 
   .img-card2 {
     width: 100px;
     margin: 0;
     padding: 0;
+    height: 130px;
   }
 
   .card-text2 {
@@ -1345,8 +1562,10 @@ text-align: center;
   }
 
   .card-title2 {
+    flex-direction: row;
     font-size: 0.9em;
     font-weight: bold;
+    width: 100%;
   }
 
   .card-p2 {
@@ -1465,6 +1684,18 @@ text-align: center;
   .search-bar {
     text-align: start;
   }
+
+  .stars {
+    width: 90%;
+    text-align: start;
+    padding-bottom: 10px;
+  }
+
+  .stars2 {
+    width: 90%;
+    text-align: start;
+    padding-bottom: 10px;
+  }
   
 }
 
@@ -1478,6 +1709,18 @@ text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
+
+    .nav-logo img {
+      width: 62px;
+      height: 20px;
+      justify-content: center;
+    }
+  
+    .nav-logo {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
     .populaire {
         float: left !important;
         width: 25%;
@@ -1536,9 +1779,19 @@ text-align: center;
         width: 25%;
       }
 
-      .img-card3 {
+      /* .img-card3 {
         width: 245px;
         height: 300px;
+      } */
+
+      .img-card3 {
+        width: 100%;
+      }
+    
+      .content-card {
+        font-size: 0.9em;
+        padding: 15px;
+        height: 41px;
       }
 
       .card-row {
@@ -1619,6 +1872,18 @@ text-align: center;
       .search-bar {
         text-align: start;
       }
+
+      .stars {
+        width: 90%;
+        text-align: start;
+        padding-bottom: 10px;
+      }
+    
+      .stars2 {
+        width: 90%;
+        text-align: start;
+        padding-bottom: 10px;
+      }
     
 }
 
@@ -1635,6 +1900,18 @@ text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+
+.nav-logo img {
+  width: 62px;
+  height: 20px;
+  justify-content: center;
+}
+
+.nav-logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .populaire {
     float: left !important;
     width: 25%;
@@ -1694,8 +1971,13 @@ text-align: center;
   }
 
   .img-card3 {
-    width: 245px;
-    height: 300px;
+    width: 100%;
+  }
+
+  .content-card {
+    font-size: 0.9em;
+    padding: 15px;
+    height: 41px;
   }
 
   .card-row {
@@ -1777,6 +2059,20 @@ text-align: center;
   .search-bar {
     text-align: start;
   }
+
+  .stars {
+    width: 90%;
+    text-align: start;
+    padding-bottom: 10px;
+  }
+
+  .stars2 {
+    width: 90%;
+    text-align: start;
+    padding-bottom: 10px;
+  }
+
+  
   
 
 }
