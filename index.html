@@ -18,8 +18,8 @@
         </div>
         <nav class="d-flex align-items-center ">
             <ul class="nav-link p-0 m-0 d-flex">
-                <li><a href="#">Hébergements </a></li>
-                <li><a href="#">Activités</a></li>
+                <li><a href="#hebergement">Hébergements </a></li>
+                <li><a href="#activite">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +33,7 @@
                 <div class="search">
                     <form class="search-form" action="#">
                         <span class="icon-search-bar bg-secondary"><i class="fa-solid fa-location-dot"></i></span>
-                        <input class="input-text m-0"  type="search" placeholder="">
+                        <input class="input-text m-0"  type="search" placeholder="" value="Marseille, France">
                         <button class="btn-search-bar m-0 bg-primary"><span class="icon-search"><i class="fa-solid fa-magnifying-glass" id="loupe"></i></span><span class="text-search">Rechercher</span></button>
                     </form>
                 </div>
@@ -52,7 +52,7 @@
             </div>
         </section>
         
-        <section class="section-hebergement d-flex w-100">
+        <section class="section-hebergement d-flex w-100" id="hebergement">
             <div class="hebergement d-flex-colum">
                 <h3 class="hebergement-title d-flex" id="hebergement-title">Hébergements à Marseille</h3>
                     <div class="card-hebergement">
@@ -147,17 +147,11 @@
                                 <i class="fa-solid fa-star secondary2"></i>
                             </span>
                         </a>
-                            
-                            
                         </div>
                         <h3 class="hebergement-title">Afficher plus</h3>
                     </div>
-                    
                 </div>
                 
-            
-        
-
             <div class="populaire d-flex-colum bg-secondary w-100">
                 <span>
                     <span class="title-populaire">Les plus populaires</span>
@@ -171,7 +165,7 @@
                                 <img src="./assets/images/hotel/20.png" alt="Image de la chambre d'hôtel montrant un lit" class="img-card-pop">
                             </div>
                             <div class="card-text-populaire">
-                                <h4 class="card-title-populaire">Auberge la Canebière</h4>
+                                <h4 class="card-title-populaire">Auberge la Canebière </h4>
                                 <p class="card-p-populaire">Nuit à partir de 25<span class="euro">€</span></p>
                                 <span class="stars2">
                                     <i class="fa-solid fa-star primary"></i>
@@ -206,7 +200,7 @@
                                 <img src="./assets/images/hotel/22.png" alt="Image de la chambre d'hôtel montrant un lit" class="img-card-pop">
                             </div>
                             <div class="card-text-populaire">
-                            <h4 class="card-title-populaire">Hôtel Bleu et Blanc</h4>
+                            <h4 class="card-title-populaire" id="title-card">Hôtel Bleu et Blanc du lac</h4>
                             <p class="card-p-populaire">Nuit à partir de 66<span class="euro">€</span></p>
                             <span class="stars2">
                                 <i class="fa-solid fa-star primary"></i>
@@ -221,7 +215,7 @@
                     </div>
                 </div>
         </section>
-        <section class="activite w-100 d-flex-row">
+        <section class="activite w-100 d-flex-row" id="activite">
             <div class="card-title3">
                 <h3 class="card-title3">Activités à Marseille</h3>
                 <div class="card3 d-flex-row">
