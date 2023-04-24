@@ -32,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
 /* ================== Générales ========================= */
 /* ====================================================== */
 
+
+
 .d-flex {
   display: flex;
 }
@@ -102,6 +104,7 @@ body {
     margin-right: auto;
     padding-left: 50px;
     padding-right: 50px;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* ====================================================== */
@@ -466,6 +469,7 @@ a {
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
+    width: 100vw !important;
 }
 
 
@@ -505,7 +509,7 @@ a {
   }
 
   .populaire {
-    width: 100% !important;
+    width: 100vw !important;
     margin: 0px !important;
   }
 
@@ -626,6 +630,17 @@ text-align: center;
 .card-title3 {
   width: 90%;
 }
+
+footer {
+  width: 92vw;
+}
+
+.footer {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+
+}
 } 
 
 
@@ -637,8 +652,8 @@ text-align: center;
     body {
         margin-left: 0;
         margin-right: 0;
-        padding-left: 1px;
-        padding-right: 1px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     header {
@@ -1059,25 +1074,29 @@ text-align: center;
 /* Tablette */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     body {
-        /* min-width: 768px; */
-        /* max-width: 80%; */
-        /* width: 760px; */
+        width: 98vw;
 
         margin-left: 0;
         margin-right: 0px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    header {
+      width: 97vw;
     }
 
     .nav-logo img {
       width: 62px;
       height: 20px;
       justify-content: center;
+      padding-left: 10px;
     }
+
   
 
     .title-recherche {
-      padding-left: 0px;
+      padding-left: 10px;
     }
 
     .recherche-title {
@@ -1086,6 +1105,7 @@ text-align: center;
 
     .search-bar {
       text-align: start;
+      padding-left: 10px;
     }
 
     .filter {
@@ -1093,7 +1113,7 @@ text-align: center;
       flex-direction:column;
       text-align: start;
       align-items: flex-start;
-      padding-left: 0px;
+      padding-left: 10px;
       margin-left: 0px;
     }
 
@@ -1135,6 +1155,9 @@ text-align: center;
       clear: right;
       text-align: right;
       background-color: #F2F2F2;
+      width: 97vw;
+      margin-left: 13px;
+      /* justify-content: center; */
       }
 
       .hebergement-title {
@@ -1167,7 +1190,8 @@ text-align: center;
 
       .populaire {
         align-items: flex-start;
-        width: 100%;
+        width: 97vw;
+        margin-left: 13px;
         height: 230px;
         text-align: left;
         border-radius: 15px;
@@ -1235,11 +1259,12 @@ text-align: center;
       }
       .card3 {
         align-items: center;
-        gap: 25px;
-        width: 95%;
+        gap: 15px;
+        width: 95vw;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        padding: 3px;
       }
 
       .btn-search-bar .icon-search {
@@ -1254,6 +1279,8 @@ text-align: center;
         flex-direction: column;
         height: 150px;
         margin: 30px 0 0 0;
+        width:100vw;
+        padding: 0 0 30px 0;
 
       } 
 
@@ -1292,6 +1319,7 @@ text-align: center;
         flex-direction: row;
         background-color: #FFFFFF;
         border-radius: 20px;
+        height: 150px;
       }
     
       .img-card-populaire {
@@ -1307,13 +1335,14 @@ text-align: center;
       .card-text-populaire {
         width: 95%;
         align-items: start;
-        padding-left: 10px;
+        padding-left: 0px;
         border-radius: 20px 0px 0px 20px;
         position: relative;
       }
 
       .card-p-populaire {
         margin-top: 5px;
+        font-size: 0.8em;
         /* margin-bottom: 50px; */
       }
     
@@ -1326,12 +1355,7 @@ text-align: center;
     
       .card-title-populaire {
         font-weight: bold;
-        font-size: 1em;
-
-      }
-
-      #title-card {
-        /* margin-bottom: 5px; */
+        font-size: 0.9em;
       }
 
 }
@@ -1340,10 +1364,12 @@ text-align: center;
 /* ================== Ecran version desktop ============= */
 /* ====================================================== */
 
-@media screen and (min-width: 1024px) and (max-width: 1299px){
+@media screen and (min-width: 1024px) and (max-width: 1439px){
   body {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 3%;
+    padding-right: 3%;
 
 }
 
@@ -1363,7 +1389,7 @@ text-align: center;
 }
 .populaire {
     float: left !important;
-    width: 30%;
+    width: 25%;
     border-radius: 15px;
     margin-bottom: 0px;
     height: 538px;
@@ -1372,7 +1398,7 @@ text-align: center;
   .hebergement {
     order: 1;
     float: right !important;
-    width: 50%;
+    width: 60%;
     clear: right;
     text-align: right;
     background-color: #F2F2F2;
@@ -1401,6 +1427,14 @@ text-align: center;
 
   .card1 {
     width: 100% !important;
+  }
+
+  .card-title {
+    font-size: 0.9em;
+  }
+
+  .card-text {
+    font-size: 0.9em;
   }
 
   .card-row {
@@ -1449,11 +1483,6 @@ text-align: center;
     border-radius: 20px 0px 0px 20px;
   }
 
-  .card-p-populaire {
-    /* margin-bottom: auto !important; */
-    /* margin-top: 5px; */
-  }
-
   .card-text-populaire {
     width: 95%;
     align-items: start;
@@ -1470,7 +1499,13 @@ text-align: center;
 
   .card-title-populaire {
     font-weight: bold;
+    font-size: 0.9em;
   }
+
+  .card-p-populaire {
+    font-size: 0.9em;
+  }
+
 
   .stars2 {
     margin-top:0;
@@ -1542,6 +1577,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
     height: 150px;
+    width: 89vw;
   } 
 
   .footer > div {
@@ -1634,10 +1670,12 @@ text-align: center;
 /* ====================================================== */
 
 /* xxl */
-@media screen and (min-width: 1300px)  {
+@media screen and (min-width: 1440px)  {
     body {
-      margin-left: 15vw;
-      margin-right: 15vw;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      padding-left: 0;
+      padding-right:0;
     }
 
     .nav-logo img {
@@ -1819,10 +1857,19 @@ text-align: center;
         bottom: 10px;
       }
 
+      footer {
+        /* width: 89vw !important; */
+        
+      }
+
       .footer {
         display: flex;
         flex-direction: column;
         height: 150px;
+        width: 77vw;
+        gap: 0px;
+
+
       } 
 
       .footer > div {
