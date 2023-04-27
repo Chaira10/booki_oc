@@ -510,8 +510,11 @@ a {
   }
 
   .populaire {
-    width: 100vw !important;
-    margin: 0px !important;
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .card-p-populaire {
@@ -632,14 +635,16 @@ text-align: center;
   width: 90%;
 }
 
-footer {
+/* footer {
   width: 92vw;
-}
+} */
 
 .footer {
   max-width: 100%;
   margin-left: 0;
   margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 
 }
 } 
