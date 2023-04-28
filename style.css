@@ -1653,7 +1653,7 @@ footer {
   .content-card {
     font-size: 0.9em;
     padding: 15px;
-    height: 41px;
+    height: 63px;
   }
 
   .footer-propos {
@@ -1874,6 +1874,7 @@ footer {
         flex-direction: row;
         width: 93%;
         margin-right: 0;
+        gap: 2%;
       }
 
       .card-body3 {
@@ -1887,6 +1888,10 @@ footer {
         object-fit: cover;
 
       }
+
+      /* .activite {
+        margin-right: 0;
+      } */
     
       .content-card {
         font-size: 0.9em;
