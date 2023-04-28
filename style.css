@@ -1656,6 +1656,10 @@ footer {
     height: 63px;
   }
 
+  footer {
+    background-color: #F2F2F2;
+  }
+
   .footer-propos {
     margin-top: 50px;
     padding-bottom:20px;
