@@ -115,6 +115,8 @@ header {
     justify-content: space-between;
 }
 
+
+
 .nav-logo img {
     height: 50px;
     width: auto;
@@ -470,16 +472,20 @@ a {
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
-    width: 100vw !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    /* min-width: 320px; */
+
+
 }
 
 
 
   .btn-filter {
-    width: 35% !important;
-    padding: 7px; 
+    width: 39% !important;
+    padding: 6px; 
     margin-bottom: 20px;
-    margin-right: 20px; 
+    /* margin-right: 20px;  */
   } 
 
   .title-filter {
@@ -489,7 +495,7 @@ a {
 
   .btn-title {
     font-size: 0.7em;
-    padding: 0;
+    padding: 5px;
   }
 
   .buttons {
@@ -510,7 +516,7 @@ a {
   }
 
   .populaire {
-    width: 100% !important;
+    width: 100vw !important;
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
@@ -537,7 +543,7 @@ a {
 
   
   .boutons-group button {
-    width: 50%;
+    width: 100%;
     margin: 5px;
   }
 
@@ -546,7 +552,11 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 95vw;
+
   }
+
+
 
 /* Mettre le logo en pleine largeur */
 .nav-logo img {
@@ -635,12 +645,14 @@ text-align: center;
   width: 90%;
 }
 
-/* footer {
-  width: 92vw;
-} */
+footer {
+  width: 100%;
+  /* background-color: lightgray; */
+
+}
 
 .footer {
-  max-width: 100%;
+  max-width: 91vw;
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
@@ -648,6 +660,19 @@ text-align: center;
 
 }
 } 
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .footer {
+    max-width: 92vw;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 575px) {
+  .footer {
+    max-width: 93vw;
+  }
+}
+
 
 
 /* ====================================================== */
@@ -660,6 +685,8 @@ text-align: center;
         margin-right: 0;
         padding-left: 0px;
         padding-right: 0px;
+        box-sizing: border-box;
+        width: 100%;
     }
 
     header {
@@ -1080,16 +1107,17 @@ text-align: center;
 /* Tablette */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     body {
-        width: 98vw;
+        width: 95vw;
+        box-sizing: border-box;
 
-        margin-left: 0;
+        margin-left: 0px;
         margin-right: 0px;
         padding-left: 0px;
         padding-right: 0px;
     }
 
     header {
-      width: 97vw;
+      width: 95vw;
     }
 
     .nav-logo img {
@@ -1161,7 +1189,7 @@ text-align: center;
       clear: right;
       text-align: right;
       background-color: #F2F2F2;
-      width: 97vw;
+      width: 87vw;
       margin-left: 13px;
       /* justify-content: center; */
       }
@@ -1196,7 +1224,7 @@ text-align: center;
 
       .populaire {
         align-items: flex-start;
-        width: 97vw;
+        width: 87vw;
         margin-left: 13px;
         height: 230px;
         text-align: left;
@@ -1266,7 +1294,7 @@ text-align: center;
       .card3 {
         align-items: center;
         gap: 15px;
-        width: 95vw;
+        width: 93vw;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -1284,9 +1312,10 @@ text-align: center;
         display: flex;
         flex-direction: column;
         height: 150px;
-        margin: 30px 0 0 0;
-        width:100vw;
+        margin: 30px 10px 0 29px;
+        width:92vw;
         padding: 0 0 30px 0;
+        justify-content: center;
 
       } 
 
@@ -1364,6 +1393,10 @@ text-align: center;
         font-size: 0.9em;
       }
 
+      .activite {
+        width: 95vw;
+      }
+
 }
 
 /* ====================================================== */
@@ -1376,6 +1409,8 @@ text-align: center;
     margin-right: 0;
     padding-left: 3%;
     padding-right: 3%;
+    box-sizing: border-box;
+
 
 }
 
@@ -1584,6 +1619,7 @@ text-align: center;
     flex-direction: column;
     height: 150px;
     width: 89vw;
+    margin-right: 0px;
   } 
 
   .footer > div {
@@ -1682,6 +1718,8 @@ text-align: center;
       margin-right: 10vw;
       padding-left: 0;
       padding-right:0;
+      box-sizing: border-box;
+
     }
 
     .nav-logo img {
