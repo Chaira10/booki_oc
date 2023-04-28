@@ -1072,6 +1072,25 @@ footer {
           margin-left: 5px;
           margin-right: 5px;
         }
+
+        .img-card-populaire {
+          border: 5px solid #FFFFFF;
+          border-radius: 0px ;
+          border-radius: 20px 0px 0px 20px;
+          height: 170px;
+          object-fit: cover;
+
+        }
+      
+        .card-text-populaire {
+          width: 95%;
+          align-items: start;
+          padding: 5px;
+          border-radius: 0px 20px 20px 0px;
+          position: relative;
+          background-color: white;
+          
+        }
       
         .img-card-populaire {
           border: 5px solid #FFFFFF;
@@ -1080,12 +1099,7 @@ footer {
           object-fit: cover;
         }
       
-        .card-text-populaire {
-          width: 95%;
-          align-items: start;
-          padding: 10px;
-          border-radius: 20px 0px 0px 20px;
-        }
+
       
         .img-card-pop {
           border-radius: 20px 0px 0px 20px;
@@ -1233,7 +1247,7 @@ footer {
         align-items: flex-start;
         width: 97vw;
         margin-left: 13px;
-        height: 260px;
+        height: 270px;
         text-align: left;
         border-radius: 15px;
         margin-bottom: 35px;
@@ -1267,11 +1281,11 @@ footer {
         height: 95%;
         align-items: flex-end;
       }
-
+/* 
       .stars2 {
         font-size: 0.5em ;
         margin-top: auto;
-      }
+      } */
 
       .stars {
         font-size: 0.9em ;
@@ -1351,7 +1365,7 @@ footer {
         font-size: 0.7em;
         /* margin-top: auto !important; */
         position: absolute;
-        bottom: 5px;
+        bottom: 15px;
       }
 
       .card-body-populaire {
@@ -1361,7 +1375,7 @@ footer {
         flex-direction: row;
         background-color: #FFFFFF;
         border-radius: 20px;
-        height: 150px;
+        /* height: 150px; */
       }
     
       .img-card-populaire {
@@ -1374,18 +1388,30 @@ footer {
         /* object-fit: cover; */
       }
     
+
+
+      .img-card-populaire {
+        border: 5px solid #FFFFFF;
+        border-radius: 0px ;
+        border-radius: 20px 0px 0px 20px;
+        height: 170px;
+      }
+    
       .card-text-populaire {
         width: 95%;
         align-items: start;
-        padding-left: 0px;
-        border-radius: 20px 0px 0px 20px;
+        padding: 5px;
+        border-radius: 0px 20px 20px 0px;
         position: relative;
+        background-color: white;
+        
       }
 
+
       .card-p-populaire {
-        margin-top: 5px;
+        /* margin-top: 5px; */
         font-size: 0.8em;
-        /* margin-bottom: 50px; */
+        margin-bottom: 0px;
       }
     
       .img-card-pop {
@@ -1510,7 +1536,7 @@ footer {
 
   .img-card {
     width: 100%;
-    height: 114px;
+    height: 100px;
     border: 3px solid #FFFFFF;
     object-fit: cover;
   }
@@ -1527,7 +1553,9 @@ footer {
 
   .img-card-populaire {
     border: 5px solid #FFFFFF;
-    border-radius: 0px ;
+    height: 135px;
+
+    /* border-radius: 0px ; */
     border-radius: 20px 0px 0px 20px;
   }
 
@@ -1535,15 +1563,21 @@ footer {
     width: 95%;
     align-items: start;
     padding: 5px;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 0px 20px 20px 0px;
     position: relative;
+    background-color: white;
+    height: 135px;
+
+
+    
   }
 
-  .img-card-pop {
+  /* .img-card-pop {
     border-radius: 20px 0px 0px 20px;
     width: 120px;
-    height: 100%;
-  }
+    height: 135px;
+
+  } */
 
   .card-title-populaire {
     font-weight: bold;
@@ -1866,11 +1900,28 @@ footer {
       }
 
       .card-body-populaire {
-        height: 170px;
+        /* height: 170px; */
       }
 
       .card-text-populaire {
         position: relative;
+      }
+
+      .img-card-populaire {
+        border: 5px solid #FFFFFF;
+        border-radius: 0px ;
+        border-radius: 20px 0px 0px 20px;
+        height: 170px;
+      }
+    
+      .card-text-populaire {
+        width: 95%;
+        align-items: start;
+        padding: 5px;
+        border-radius: 0px 20px 20px 0px;
+        position: relative;
+        background-color: white;
+        
       }
 
       .card3 {
@@ -1890,6 +1941,7 @@ footer {
       .img-card3 {
         width: 100%;
         object-fit: cover;
+        height: 100%;
 
       }
 
